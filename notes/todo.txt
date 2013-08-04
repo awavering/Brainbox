@@ -1,0 +1,2 @@
+-GUI support for multiple roles (ie, teacher and student)
+-Detailed relations (instead of section.users, section.teachers and section.students)

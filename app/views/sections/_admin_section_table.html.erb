@@ -1,0 +1,29 @@
+<h2><%= title %></h2>
+
+<table class="section-table table">
+  <thead>
+    <tr> 
+      <th>Name</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Location</th>
+      <th>Capacity</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+<% sections.each do |section| %>
+  <tr>
+    <td><%= link_to section.name, section %></td>
+    <td><%= section.start %></td>
+    <td><%= section.finish %></td>
+    <td><%= section.location %></td>
+    <td><%= section.capacity %></td>
+    <td><%= section.description[0..63] + (section.description.length > 64 ? '...' : '' )%></td>
+    <td><%= link_to 'Edit', edit_section_path(section), :class => 'btn btn-warning btn-small' %></td>
+    <td><%= link_to 'Delete', section, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-small' %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,9 @@
+<% title @section.name %>
+
+<%= render_tabs @tab, {
+    'Assignments' => render(:partial => 'assignments'),
+    'Calendar' => render(:partial => 'calendar'),
+    'Files' => render(:partial => 'files'),
+    'Overview' => render(:partial => 'overview')
+  }
+%>

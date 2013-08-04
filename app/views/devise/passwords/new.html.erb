@@ -1,0 +1,15 @@
+<style>
+body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+</style>
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, :class => 'form-signin' }) do |f| %>
+  <!--<%= devise_error_messages! %>-->
+  <h2 class='form-signin-heading'>Forgot your password?</h2>
+  <div><%= f.email_field :email, :placeholder => 'Email', :class => 'input-block-level' %></div>
+
+  <div class='pull-left'><%= f.submit "Reset", :class => 'btn btn-warning btn-large' %></div>
+  <div class='pull-right'><%= render "devise/shared/links"%></div>
+<% end %>

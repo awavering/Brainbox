@@ -1,0 +1,16 @@
+<% title "Manage Courses" %>
+
+<% if not @sections_teaching.blank? %>
+  <%= render :partial => 'admin_section_table', :locals => {:sections => @sections_teaching, :title => 'Courses I teach'} %>
+<% end %>
+
+<% if not @sections_taking.blank? %>
+  <%= render :partial => 'section_table', :locals => {:sections => @sections_taking, :title => 'Courses I take'} %>
+<% end %>
+
+<% if @sections_teaching.blank? and @sections_taking.blank? %>
+  <h3>You are not currently enrolled in, nor teaching, any classes.</h3>
+<% end %>
+<br/>
+
+<%= link_to '<i class="icon-plus icon-white"></i> Add a course'.html_safe, new_section_path, :class => 'btn btn-primary pull-right' %>

@@ -1,0 +1,13 @@
+<div class="well sidebar-nav">
+  <ul class="nav nav-list">
+  <li><%= link_to home_path, :title => "Home" do %>
+     	Home
+ 	<% end %></li>
+    <% if not @sections_teaching.blank? %>
+      <%= render :partial => 'sidebar_section_links', :locals => {:title => "Courses I'm Teaching", :sections => @sections_teaching} %>
+    <% end %>
+    <% if not @sections_taking.blank? %>
+      <%= render :partial => 'sidebar_section_links', :locals => {:title => "Courses I'm Taking", :sections => @sections_taking} %>
+    <% end %>
+  </ul>
+</div>

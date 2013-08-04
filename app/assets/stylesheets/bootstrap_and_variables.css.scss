@@ -1,0 +1,59 @@
+// define bootstrap variables, then load bootstrap
+// list of variables and their defaults: http://twitter.github.com/bootstrap/customize.html#variables
+// also: https://github.com/twitter/bootstrap/blob/master/less/variables.less
+
+// edits made so far are to make brainbox just a little more dense
+
+// Grid system
+$gridGutterWidth: 10px;
+$gridColumnWidth: 40px;
+
+// Typography
+$baseFontSize: 14px;
+$baseLineHeight: 18px;
+
+@import "bootstrap";
+//@import "bootstrap-responsive";
+
+h4 {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 6px;
+}
+
+.description {
+	width: 300px;
+}
+
+.display-none{
+  display: none;
+}
+
+.form-horizontal {
+	margin-left: -60px;
+	margin-top: 40px;
+}
+
+#main-outer-container {
+	margin-left: 10px;
+	min-width: 800px;
+}
+
+.navbar {
+	min-width: 800px;
+}
+
+/* to eliminate fly-in from top from bootstrap's modals */
+.modal.fade{
+  -webkit-transition:opacity .3s linear, top .0s ease-out;
+  -moz-transition:opacity .3s linear, top .0s ease-out;
+  -ms-transition:opacity .3s linear, top .0s ease-out;
+  -o-transition:opacity .3s linear, top .0s ease-out;
+  transition:opacity .3s linear, top .0s ease-out;
+  top:-25%;
+}
+
+.class-details {
+	margin-top: 10px;
+}

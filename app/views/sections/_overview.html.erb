@@ -1,0 +1,37 @@
+<h2 class='header'><%= @section.name %></h2>
+<%= link_to 'Edit', edit_section_path(@section), :class => 'btn btn-warning flat', :style =>'margin-left: 20px; margin-top: -14px;' %>
+<div class='class-details'>
+<p><b>Taught by:</b> <%= @section.teachers.map{ |t| "#{t.first} #{t.last}" }.join(", ") %></p>
+<p>
+  <b>Starts at:</b>
+  <%= @section.start %>
+</p>
+
+<p>
+  <b>Finishes at:</b>
+  <%= @section.finish %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @section.location %>
+</p>
+
+<p>
+  <b>Class size:</b>
+  <%= @section.capacity %>
+</p>
+
+<p class='class description'>
+  <b>Description:</b>
+  <%= @section.description %>
+</p>
+
+<p>
+  <b>Announcements:</b>
+  <%= @section.announcements %>
+</p>
+</div>
+<!--<%= link_to 'Show All', section_assignments_path(@section), :class => 'btn' %>-->
+
+<!--<%= "#{@section.teachers.count == 1 ? '' : 's'}" %>-->

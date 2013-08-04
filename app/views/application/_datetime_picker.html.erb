@@ -1,0 +1,7 @@
+<div class="datetime-picker input-append">
+  <input class="input-xlarge" id="<%= "#{obj.class.to_s.downcase}_#{attribute}" %>" name="<%= "#{obj.class.to_s.downcase}[#{attribute}]" %>" size="30" type="text" data-format="MM/dd/yyyy HH:mm:ss PP" value="<%= format_date_for_form obj.send(attribute) %>"></input>
+  <span class="add-on">
+    <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+    </i>
+  </span>
+</div>

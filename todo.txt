@@ -1,0 +1,9 @@
+Non-LMS things to do:
+  - Authorization & Security
+
+Authorization & Security:
+  1. Make separate DB users?
+  2. Load DB passwords from secure location
+  3. Protect CRUD:
+      a. Check lists in *_permissions.yml
+      b. Check conditions in helper

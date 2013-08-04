@@ -1,0 +1,23 @@
+<h2><%= title %></h2>
+
+<table class="section-table table">
+  <thead>
+    <tr> 
+      <th>Name</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Location</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+<% sections.each do |section| %>
+  <tr>
+    <td><%= link_to section.name, section %></td>
+    <td><%= format_date_for_form section.start %></td>
+    <td><%= format_date_for_form section.finish %></td>
+    <td><%= section.location %></td>
+    <td><%= section.description[0..63] + (section.description.length > 63 ? '...' : '' )%></td>
+  </tr>
+<% end %>
+</table>

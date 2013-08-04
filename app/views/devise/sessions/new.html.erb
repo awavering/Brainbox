@@ -1,0 +1,29 @@
+<style>
+body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+#brainbox-logo-login{
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+</style>
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => "form-signin"}) do |f| %>
+  <%= image_tag 'brainbox.png', :id => 'brainbox-logo-login'  %>
+  <br/>
+  <br/>
+  <!--h2 class='form-signin-heading'>Please sign in</h2-->
+	<%= render "easy_login" if Rails.env.development? %>
+  <div><%= f.email_field :email, :placeholder => 'Email', :class => 'input-block-level' %></div>
+  <div><%= f.password_field :password, :placeholder => 'Password', :class => 'input-block-level' %></div>
+
+  <% if devise_mapping.rememberable? %>
+    <label class='checkbox'><%= f.check_box :remember_me %>Remember me</label>
+  <% end -%>
+
+  <div class='pull-left'><%= f.submit "Sign in", :class => 'btn btn-primary btn-large' %></div>
+  <div class='pull-right'><%= render "devise/shared/links"%></div>
+<% end %>

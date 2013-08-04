@@ -1,0 +1,2 @@
+module SuperFilesHelper
+end

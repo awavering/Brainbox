@@ -1,0 +1,45 @@
+<%= form_for(@section, :html => {:class => 'form-horizontal'}) do |f| %>
+  <% if @section.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@section.errors.count, "error") %> prohibited this section from being saved:</h2>
+
+      <ul>
+      <% @section.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field control-group">
+    <%= f.label :name, :class => 'control-label', :for => 'section_name' %>
+    <div class="controls"><%= f.text_field :name, :class => 'input-xxlarge' %></div>
+  </div>
+  <div class="field control-group">
+    <%= f.label :start, :class => 'control-label', :for => 'section_start' %>
+    <div class="controls"><%= render_datetime_picker @section, :start %></div>
+  </div>
+  <div class="field control-group">
+    <%= f.label :finish, :class => 'control-label', :for => 'section_finish' %>
+    <div class="controls"><%= render_datetime_picker @section, :finish %></div>
+  </div>
+  <div class="field control-group">
+    <%= f.label :location, :class => 'control-label', :for => 'section_location' %>
+    <div class="controls"><%= f.text_field :location %></div>
+  </div>
+  <div class="field control-group">
+    <%= f.label :capacity, :class => 'control-label', :for => 'section_capacity' %>
+    <div class="controls"><%= f.number_field :capacity, :class => 'input-small'%></div>
+  </div>
+  <div class="field control-group">
+    <%= f.label :description, :class => 'control-label', :for => 'section_description' %>
+    <div class="controls"><%= f.text_area :description, :class => 'input-xxlarge', :style => 'height: 80px;' %></div>
+  </div>
+  <div class="field control-group">
+    <%= f.label :announcements, :class => 'control-label', :for => 'section_announcements' %>
+    <div class="controls"><%= f.text_area :announcements, :class => 'input-xxlarge', :style => 'height: 120px;'%></div>
+  </div>
+  <div class="actions" style="margin-top:20px; margin-left: 180px;">
+    <%= f.submit "Save", :class => 'btn btn-success' %> <%= link_to 'Cancel', @section, :class => 'btn' %>
+  </div>
+<% end %>

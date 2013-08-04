@@ -1,0 +1,7 @@
+<ul id="tabs" class="nav nav-tabs">
+  <% tab_content.keys.each do |title| %>
+    <li <% if active_tab == title %> class="active" <% end %> > 
+      <a href="#<%= title.downcase %>" class="hash-change" data-toggle="tab" data-hash-change="t:<%= title.downcase[0] %>" data-tab-code="<%= title.downcase[0] %>"><h4><%= title %></h4></a>
+    </li>
+  <% end  %>
+</ul>

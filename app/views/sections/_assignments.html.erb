@@ -1,0 +1,29 @@
+<h2 class='header'>Assignments</h2>
+<%= link_to '<i class="icon-plus icon-white"></i> New'.html_safe, new_section_assignment_path(@section), :class => 'btn btn-success', :style =>'margin-left: 20px; margin-top: -14px;' %>
+<table class='table table-striped' style="margin-top:20px;">
+  <tr>
+    <th align='left' width='200'>Name</th>
+    <th align='left' width='100'>Due</th>
+    <th align='left' width='100'>Category</th>
+    <th align='left' width='300'>Description</th>
+    <th width='40'></th>
+    <th width='37'></th>
+    <th width='21'></th>
+    <th width='34'></th>
+  </tr>
+
+<% @assignments.each do |assignment| %>
+  <tr>
+    <td><%= assignment.name %></td>
+    <td><%= assignment.due %></td>
+    <td><%= assignment.category %></td>
+    <td><%= assignment.description %></td>
+    <td></td>
+    <td><%= link_to 'Details', section_assignment_path(@section, assignment), :class => 'btn btn-small' %></td>
+    <td><%= link_to 'Edit', edit_section_assignment_path(@section, assignment), :class => 'btn btn-warning btn-small' %></td>
+    <td><%= link_to 'Delete', section_assignment_path(@section, assignment), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-small' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

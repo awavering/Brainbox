@@ -1,0 +1,47 @@
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 id="myModalLabel"><%= "#{@user.first} #{@user.last}" %></h3>
+</div>
+<div class="modal-body">
+  <dl class="dl-horizontal">
+    <dt>Name</dt>
+    <dd><%= "#{@user.first} #{@user.last}" %></dd>
+
+    <dt>Email</dt>
+    <dd><%= "#{@user.email}" %></dd>
+  </dl>
+
+  <% if @user.sections_taking.length > 0 %>
+    <dl>
+      <dt>Enrolled in <%= "#{@user.sections_taking.length} #{'course'.plurality(@user.sections_taking.length)}:" %></dt>
+      <dd>
+        <ul class="unstyled">
+          <% @user.sections_taking.each do |section| %>
+            <li><%= link_to "#{section.name}", section %></li>
+          <% end %>
+        </ul>
+      </dd>
+    </dl>
+  <% end %>
+
+  <% if @user.sections_teaching.length > 0 %>
+    <dl>
+      <dt>Teaching <%= "#{@user.sections_teaching.length} #{'course'.plurality(@user.sections_teaching.length)}:" %></dt>
+      <dd>
+        <ul class="unstyled">
+          <% @user.sections_teaching.each do |section| %>
+            <li><%= link_to "#{section.name}", section %></li>
+          <% end %>
+        </ul>
+      </dd>
+    </dl>
+  <% end %>
+
+  <div class="pull-right">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
+<!--<div class="modal-footer">
+  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  <button class="btn btn-primary">Submit</button>
+</div>-->

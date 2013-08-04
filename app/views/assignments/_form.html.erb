@@ -1,0 +1,43 @@
+<div class="row-fluid">
+  <div class="span5">
+    <%= form_for([@section, @assignment], :html => {:class => 'form-horizontal'}, :validate => true) do |f| %>
+      <% if @assignment.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
+          <ul>
+          <% @assignment.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field control-group">
+        <%= f.label :name, :class => 'control-label', :for => 'assignment_name' %>
+        <div class="controls"><%= f.text_field :name, :class => 'input-xlarge' %></div>
+      </div>
+      <div class="field control-group">
+        <%= f.label :due, :class => 'control-label', :for => 'assignment_due' %>
+        <div class="controls"><%= render_datetime_picker @assignment, :due %></div>
+      </div>
+      <div class="field control-group">
+        <%= f.label :late, :class => 'control-label', :for => 'assignment_late' %>
+        <div class="controls"><%= render_datetime_picker @assignment, :late %></div>
+      </div>
+      <div class="field control-group">
+        <%= f.label :category, :class => 'control-label', :for => 'assignment_category' %>
+        <div class="controls"><%= f.text_field :category, :class => 'input-small'  %></div>
+      </div>
+      <div class="field">
+        <%= f.label :description, :class => 'control-label', :for => 'assignment_description' %>
+        <div class="controls"><%= f.text_area :description, :class => 'input-xlarge', :style => 'height: 80px;'%></div>
+      </div>
+      <div class="actions" style="margin-top:20px; margin-left: 120px;">
+        <%= f.submit 'Save', :class => 'btn btn-success',  :id => 'save-assignment' %> <%= link_to 'Cancel', section_path(@section, :anchor => "t=a"), :class => 'btn'%>
+      </div>
+    <% end %>
+  </div>
+  <div class="span5">
+    
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h3><%= "#{@user.first} #{@user.last} (#{@user.email}) says:"%></h3>
+    <p>
+      <%= @msg %>
+    </p>
+    Signed, your friendly Brainbox server at <%= "#{root_url}" %>.
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title><%= yield(:title) %></title>
+    <script type="text/javascript">
+      window.file_upload_path = '<%= create_many_super_files_path %>'
+      window.ui = {}
+      window.ui['activeSection'] = <%= "'#{(not @section.nil?) ? '/sections/'+@section.id.to_s : ''}'".html_safe %>
+    </script>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <%= link_to "#{image_tag 'brainboxicon.png', :class => 'brainbox-logo-image'}<span class='brand'>School Name </span>".html_safe, home_path %>
+          <div class="nav-collapse pull-right">
+            <ul class="nav">
+            <li id="feedback-button" href="#feedback" role="button" class="btn feedback-button" data-toggle="modal" data-placement="bottom">Give us feedback!</li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="app-menu-dropdown" role="button" data-toggle="dropdown" data-target="#" href="">
+                  <span class="menu-username-indicator"><%= "#{current_user.first} #{current_user.last} (#{current_user.roles_to_s})"%>&nbsp<b class="caret"></b></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="app-menu-dropdown">
+                  <li><%= link_to "Manage Users", users_path %></a></li>
+                  <li><%= link_to "Manage Courses", manage_courses_path %></a></li>
+                  <li><%= link_to "Preferences", edit_user_registration_path %></li>
+                  <li class="divider"></li>
+                  <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+		<!--flash messages-->
+		<div id="main-outer-container">
+  		<% if notice %>
+        <p class="notice"><%= notice %></p>
+    	<% end %>
+      <% if alert %>
+        <p class="alert"><%= alert %></p>
+  		<% end %>
+      <div class="row-fluid">
+  			<div class="span3">
+  				<%= render 'sidebar' %>
+        </div>
+        <div class="span9">
+          <span id="application-alert-container">
+          </span>
+          <div class="tabs_container">
+            <%= yield %>
+          </div>
+  			</div>
+  		</div>
+          <hr>
+    <footer>
+    <p>Powered by Brainbox</p>
+    </footer>
+		</div>
+    <%= render 'feedback_form_modal' %>
+	</body>
+</html>

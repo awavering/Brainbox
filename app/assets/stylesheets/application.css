@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ *= require fullcalendar
+ *= require fullcalendar.print
+ *= require bootstrap-datetimepicker_min
+ */
+body {
+  font-size: 14px;
+}
+
+#fullcalendar-container {
+	width: 800px;
+}
+
+.header {
+	display: inline!important;
+}
+
+.hidden-form-field{
+  display: none;
+}
+
+#ui-helper{
+  display: none;
+}
+
+.form-signin {
+        max-width: 300px;
+        padding: 19px 29px 79px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+.sidebar-nav{
+  padding: 0px!important;
+}
+
+.nav-list {
+padding-right: 30px;
+padding-left: 30px;
+margin-bottom: 0;
+}
+
+.nav-list a {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: -16px!important;
+  margin-right: -16px!important;
+  padding: 0px!important 30px!important;
+  line-height: 35px;
+}
+
+hr {
+  margin 2px 1px;
+}
+ .btn {
+    filter:progid:DXImageTransform.Microsoft.Gradient(enabled='false')!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    box-shadow: none!important;
+    background-image:none!important;
+    border:0!important;
+    text-shadow: none!important;
+    font-color: black!important;
+    letter-spacing: 1px;
+}}

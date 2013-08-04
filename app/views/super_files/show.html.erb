@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @super_file.name %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @super_file.size %>
+</p>
+
+<p>
+  <b>Storage:</b>
+  <%= @super_file.storage %>
+</p>
+
+<p>
+  <b>Extension:</b>
+  <%= @super_file.extension %>
+</p>
+
+
+<%= link_to 'Edit', edit_super_file_path(@super_file) %> |
+<%= link_to 'Back', super_files_path %>

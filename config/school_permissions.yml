@@ -1,0 +1,28 @@
+# first level of protection - if the obj's class is not in a list, the requested action will be denied
+
+admin:
+  manages: [Assignment, CalendarEvent, Comment, Course, Section, Submission, SuperFile]
+  creates: []
+  reads: [School, User]
+  updates: [School, User]
+  deletes: []
+
+teacher:
+  manages: [Assignment, CalendarEvent, Comment, SuperFile]
+  creates: []
+  reads: [Course, Section, School, User]
+  updates: [Section, User]
+  deletes: []
+
+student:
+  manages: [Comment, Submission, SuperFile]
+  creates: []
+  reads: [Assignment, CalendarEvent, Course, School, Section, User]
+  updates: [Assignment, User]
+  deletes: []
+
+parent:
+  manages: []
+  creates: []
+  reads: [Assignment, CalendarEvent, Course, School, Section, User]
+  deletes: []

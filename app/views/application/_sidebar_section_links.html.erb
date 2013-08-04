@@ -1,0 +1,2 @@
+<!--<li class="nav-header"><%= title %></li>-->
+<%= sections.collect{ |section| "<li> #{link_to section.name, section_path(section, anchor: 't=o') } </li>" }.join("").html_safe %>

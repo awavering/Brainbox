@@ -1,0 +1,38 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// for the app layout:
+#outer-container{
+  //margin-top: 60px;
+}
+
+.feedback-button{
+  float: right;
+  margin-right: 20px;
+}
+
+.brainbox-logo-text{
+  font-weight: bold;
+  max-height: 23px;
+}
+
+.brainbox-logo-image{
+  margin-right: 16px;
+  margin-top: 10px;
+  float:left; 
+}
+
+.menu-username-indicator{
+  color: #ffffff;
+}
+
+#feedback_textarea {
+  width: 516px;
+  height: 120px;
+}
+
+body {
+          padding-top: 60px;
+        padding-bottom: 40px;
+}

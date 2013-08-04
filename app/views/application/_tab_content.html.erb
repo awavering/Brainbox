@@ -1,0 +1,7 @@
+<div id="tabsContent" class="tab-content">
+  <% tab_content.each do |title, content| %>
+    <div class="tab-pane fade <% if active_tab == title %>active in<% end %>" id="<%= title.downcase %>">
+      <%= content %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,25 @@
+<h1>Listing calendar_events</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>When</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @calendar_events.each do |calendar_event| %>
+  <tr>
+    <td><%= calendar_event.name %></td>
+    <td><%= calendar_event.when %></td>
+    <td><%= link_to 'Show', calendar_event %></td>
+    <td><%= link_to 'Edit', edit_calendar_event_path(calendar_event) %></td>
+    <td><%= link_to 'Destroy', calendar_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Calendar event', new_calendar_event_path %>

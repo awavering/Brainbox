@@ -1,0 +1,29 @@
+<h1>Listing super_files</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Size</th>
+    <th>Storage</th>
+    <th>Extension</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @super_files.each do |super_file| %>
+  <tr>
+    <td><%= super_file.name %></td>
+    <td><%= super_file.size %></td>
+    <td><%= super_file.storage %></td>
+    <td><%= super_file.extension %></td>
+    <td><%= link_to 'Show', super_file %></td>
+    <td><%= link_to 'Edit', edit_super_file_path(super_file) %></td>
+    <td><%= link_to 'Destroy', super_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Super file', new_super_file_path %>

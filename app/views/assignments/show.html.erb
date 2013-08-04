@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @assignment.name %>
+</p>
+
+<p>
+  <b>Due:</b>
+  <%= @assignment.due %>
+</p>
+
+<p>
+  <b>Late:</b>
+  <%= @assignment.late %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @assignment.category %>
+</p>
+
+<p class='assignment description'>
+  <b>Description:</b>
+  <%= @assignment.description %>
+</p>
+
+<%= link_to 'Back', section_path(@section, :anchor => "t=a"), :class => 'btn' %>
+<%= link_to 'Edit', edit_section_assignment_path(@section, @assignment), :class => 'btn btn-warning' %>

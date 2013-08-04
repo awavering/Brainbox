@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  due: 2012-12-05 21:46:37
+  late: 2012-12-05 21:46:37
+  category: MyString
+  description: MyString
+
+two:
+  name: MyString
+  due: 2012-12-05 21:46:37
+  late: 2012-12-05 21:46:37
+  category: MyString
+  description: MyString

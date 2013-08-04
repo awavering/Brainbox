@@ -1,0 +1,11 @@
+<% title "Manage Users" %>
+
+<%= render_tabs @tab, {
+    'Students' => render(:partial => 'user_table', :locals => {:users => @users_by_category[:student], :title => 'Students'}),
+    'Teachers' => render(:partial => 'user_table', :locals => {:users => @users_by_category[:teacher], :title => 'Teachers'}),
+    'Parents' => render(:partial => 'user_table', :locals => {:users => @users_by_category[:parent], :title => 'Parents'}),
+    'Admins' => render(:partial => 'user_table', :locals => {:users => @users_by_category[:admin], :title => 'Administrators'})
+  }
+%>
+
+<div id="show-user-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
