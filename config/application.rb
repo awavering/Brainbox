@@ -54,5 +54,3 @@ module Brainbox
     config.assets.debug = true
   end
 end
-
-config.assets.initialize_on_precompile = false
