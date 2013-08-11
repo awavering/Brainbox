@@ -51,3 +51,6 @@ gem 'faker'
 
 # backwards compatibility with Rails 3.x behavior
 gem 'protected_attributes'
+
+gem 'rspec/core'
+gem 'rspec/core/rake_task'
