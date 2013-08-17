@@ -5,9 +5,4 @@
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
 
-def replace_me
-  puts "Hello!  Please generate your own secret token by editing secret_token.rb.  Replace this call with the output of 'rake secret'."
-  exit
-end
-
-Brainbox::Application.config.secret_key_base = replace_me
+Brainbox::Application.config.secret_key_base = `rake secret`

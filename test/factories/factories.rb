@@ -82,8 +82,8 @@ FactoryGirl.define do
     first { Faker::Name.first_name }
     last { Faker::Name.last_name }
     email { "#{first}.#{last}@#{Faker::Internet.domain_name}".downcase }
-    password "abc123"
-    password_confirmation "abc123"
+    password "abcd1234"
+    password_confirmation "abcd1234"
 
     factory :super do
       first "Super"
