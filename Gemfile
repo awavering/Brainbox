@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'json', '1.7.7'
 
-
 if RUBY_PLATFORM =~ /java/
   gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.0.beta2'
   #gem 'jruby-openssl', platform: jruby
@@ -13,7 +12,7 @@ else
   group :heroku do
   	gem 'pg'
   end
-  group :developement, :production, :test do
+  group :development do
   	gem 'sqlite3'
   end
 end
