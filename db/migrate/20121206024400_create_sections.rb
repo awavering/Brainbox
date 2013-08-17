@@ -6,8 +6,8 @@ class CreateSections < ActiveRecord::Migration
       t.datetime :finish
       t.string :location
       t.integer :capacity
-      t.string :description
-      t.string :announcements
+      t.text :description
+      t.text :announcements
 
       t.integer :course_id
 
