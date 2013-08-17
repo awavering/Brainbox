@@ -79,7 +79,7 @@ margin-bottom: 0;
 }
 
 hr {
-  margin 2px 1px;
+  margin: 2px 1px;
 }
  .btn {
     filter:progid:DXImageTransform.Microsoft.Gradient(enabled='false')!important;
@@ -91,4 +91,4 @@ hr {
     text-shadow: none!important;
     font-color: black!important;
     letter-spacing: 1px;
-}}
+}

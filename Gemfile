@@ -12,7 +12,7 @@ else
   group :heroku do
   	gem 'pg'
   end
-  group :development do
+  group :development, :production, :test do
   	gem 'sqlite3'
   end
 end
