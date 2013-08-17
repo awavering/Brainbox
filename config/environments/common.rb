@@ -1,9 +1,10 @@
 Rails.logger.info "Loading environment: common"
 
 Brainbox::Application.configure do
-
+  #config.autoload_paths += %W(#{config.root}/lib)
+  
   # for devise
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  #config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # On config/application.rb forcing your application to not access the DB
   # or load models when precompiling your assets.

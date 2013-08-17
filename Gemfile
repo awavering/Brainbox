@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+#ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 gem 'json', '1.7.7'
@@ -8,9 +8,13 @@ gem 'json', '1.7.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.0.beta2'
+if RUBY_PLATFORM =~ /jruby/
+	gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.0.beta2', platform: :jruby
+else
+	gem 'sqlite3'
+end
 
-#gem 'jruby-openssl'
+#gem 'jruby-openssl', platform: jruby
 
 gem 'sass-rails'
 gem 'coffee-rails'
@@ -51,6 +55,3 @@ gem 'faker'
 
 # backwards compatibility with Rails 3.x behavior
 gem 'protected_attributes'
-
-gem 'rspec/core'
-gem 'rspec/core/rake_task'

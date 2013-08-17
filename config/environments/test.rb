@@ -1,4 +1,4 @@
-require 'config/environments/common'
+require "#{Rails.root}/config/environments/common"
 
 Rails.logger.info "Loading environment: test"
 

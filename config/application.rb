@@ -54,4 +54,3 @@ module Brainbox
     config.assets.debug = true
   end
 end
-config.assets.compile = true
