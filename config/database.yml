@@ -18,3 +18,7 @@ test:
 production:
   adapter: sqlite3
   database: db/production.sqlite3
+
+heroku:
+  adapter: pg
+  database: db/heroku.pg
