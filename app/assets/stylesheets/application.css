@@ -81,14 +81,15 @@ margin-bottom: 0;
 hr {
   margin: 2px 1px;
 }
- .btn {
-    filter:progid:DXImageTransform.Microsoft.Gradient(enabled='false')!important;
-    -webkit-box-shadow: none!important;
-    -moz-box-shadow: none!important;
-    box-shadow: none!important;
-    background-image:none!important;
-    border:0!important;
-    text-shadow: none!important;
-    font-color: black!important;
-    letter-spacing: 1px;
+
+.btn {
+  filter:progid:DXImageTransform.Microsoft.Gradient(enabled='false')!important;
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  box-shadow: none!important;
+  background-image:none!important;
+  border:0!important;
+  text-shadow: none!important;
+  font-color: black!important;
+  letter-spacing: 1px;
 }

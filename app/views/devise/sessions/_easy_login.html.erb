@@ -1,7 +1,7 @@
 Log in as: <select class='easylogin'>
 	<%= 
 		["<option value='' data-email='' data-pw=''></option>"].concat( User.all.collect do |u|
-			"<option value=#{u.id} data-email='#{u.email}' data-pw='abc123'>#{u.first} #{u.last}; #{u.roles_to_s}</option>"
+			"<option value=#{u.id} data-email='#{u.email}' data-pw='abcd1234'>#{u.first} #{u.last}; #{u.roles_to_s}</option>"
 		end).join.html_safe
 	%>
 </select>
