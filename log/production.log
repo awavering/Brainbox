@@ -1,0 +1,831 @@
+I, [2013-08-17T17:35:19.935000 #22634]  INFO -- : Migrating to DeviseCreateUsers (20121201043016)
+I, [2013-08-17T17:35:20.012000 #22634]  INFO -- : Migrating to AddFirstToUser (20121204024426)
+I, [2013-08-17T17:35:20.066000 #22634]  INFO -- : Migrating to AddLastToUser (20121204024833)
+I, [2013-08-17T17:35:20.107000 #22634]  INFO -- : Migrating to AddRolesToUser (20121206015746)
+I, [2013-08-17T17:35:20.126000 #22634]  INFO -- : Migrating to AddPreferencesToUser (20121206015908)
+I, [2013-08-17T17:35:20.144000 #22634]  INFO -- : Migrating to CreateSchoolUserJoinTable (20121206015911)
+I, [2013-08-17T17:35:20.166000 #22634]  INFO -- : Migrating to CreateChildUserJoinTable (20121206015912)
+I, [2013-08-17T17:35:20.203000 #22634]  INFO -- : Migrating to CreateStudentSectionJoinTable (20121206015913)
+I, [2013-08-17T17:35:20.240000 #22634]  INFO -- : Migrating to CreateTeacherSectionJoinTable (20121206015914)
+I, [2013-08-17T17:35:20.271000 #22634]  INFO -- : Migrating to CreateSchools (20121206023611)
+I, [2013-08-17T17:35:20.318000 #22634]  INFO -- : Migrating to CreateCourses (20121206024106)
+I, [2013-08-17T17:35:20.346000 #22634]  INFO -- : Migrating to CreateSections (20121206024400)
+I, [2013-08-17T17:35:20.444000 #22634]  INFO -- : Migrating to CreateAssignments (20121206024636)
+I, [2013-08-17T17:35:20.501000 #22634]  INFO -- : Migrating to CreateSubmissions (20121206024832)
+I, [2013-08-17T17:35:20.527000 #22634]  INFO -- : Migrating to CreateSuperFiles (20121206025513)
+I, [2013-08-17T17:35:20.542000 #22634]  INFO -- : Migrating to CreateCalendarEvents (20121206025634)
+I, [2013-08-17T17:35:20.557000 #22634]  INFO -- : Migrating to CreateComments (20121206025849)
+I, [2013-08-17T17:35:20.581000 #22634]  INFO -- : Migrating to CreateParentUserJoinTable (201212060159121)
+I, [2013-08-17T17:36:39.030000 #22640]  INFO -- : Started GET "/" for 127.0.0.1 at 2013-08-17 17:36:39 -0400
+I, [2013-08-17T17:36:39.400000 #22640]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-08-17T17:36:41.568000 #22640]  INFO -- : Completed 401 Unauthorized in 2167ms
+I, [2013-08-17T17:36:42.940000 #22640]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-17 17:36:42 -0400
+I, [2013-08-17T17:36:42.950000 #22640]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:36:43.085000 #22640]  INFO -- :   Rendered devise/shared/_links.erb (9.0ms)
+I, [2013-08-17T17:36:43.089000 #22640]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (73.0ms)
+I, [2013-08-17T17:36:43.097000 #22640]  INFO -- : Completed 200 OK in 145ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+I, [2013-08-17T17:36:43.151000 #22640]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-08-17 17:36:43 -0400
+F, [2013-08-17T17:36:43.161000 #22640] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:36:43.166000 #22640]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-08-17 17:36:43 -0400
+F, [2013-08-17T17:36:43.187000 #22640] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:36:43.292000 #22640]  INFO -- : Started GET "/images/brainbox.png" for 127.0.0.1 at 2013-08-17 17:36:43 -0400
+F, [2013-08-17T17:36:43.309000 #22640] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/brainbox.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:36:43.511000 #22640]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2013-08-17 17:36:43 -0400
+F, [2013-08-17T17:36:43.520000 #22640] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:02.739000 #22647]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-17 17:38:02 -0400
+I, [2013-08-17T17:38:03.233000 #22647]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:38:07.063000 #22647]  INFO -- :   Rendered devise/shared/_links.erb (8.0ms)
+I, [2013-08-17T17:38:07.068000 #22647]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (68.0ms)
+I, [2013-08-17T17:38:07.077000 #22647]  INFO -- : Completed 200 OK in 3842ms (Views: 91.0ms | ActiveRecord: 16.0ms)
+I, [2013-08-17T17:38:07.135000 #22647]  INFO -- : Started GET "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css" for 127.0.0.1 at 2013-08-17 17:38:07 -0400
+F, [2013-08-17T17:38:07.143000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:07.149000 #22647]  INFO -- : Started GET "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js" for 127.0.0.1 at 2013-08-17 17:38:07 -0400
+F, [2013-08-17T17:38:07.157000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:07.183000 #22647]  INFO -- : Started GET "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png" for 127.0.0.1 at 2013-08-17 17:38:07 -0400
+F, [2013-08-17T17:38:07.195000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:07.365000 #22647]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2013-08-17 17:38:07 -0400
+F, [2013-08-17T17:38:07.383000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:09.622000 #22647]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-17 17:38:09 -0400
+I, [2013-08-17T17:38:09.634000 #22647]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:38:09.686000 #22647]  INFO -- :   Rendered devise/shared/_links.erb (3.0ms)
+I, [2013-08-17T17:38:09.689000 #22647]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (16.0ms)
+I, [2013-08-17T17:38:09.696000 #22647]  INFO -- : Completed 200 OK in 59ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+I, [2013-08-17T17:38:09.749000 #22647]  INFO -- : Started GET "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js" for 127.0.0.1 at 2013-08-17 17:38:09 -0400
+F, [2013-08-17T17:38:09.762000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:09.769000 #22647]  INFO -- : Started GET "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css" for 127.0.0.1 at 2013-08-17 17:38:09 -0400
+F, [2013-08-17T17:38:09.782000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:09.829000 #22647]  INFO -- : Started GET "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png" for 127.0.0.1 at 2013-08-17 17:38:09 -0400
+F, [2013-08-17T17:38:09.837000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:09.924000 #22647]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2013-08-17 17:38:09 -0400
+F, [2013-08-17T17:38:09.941000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:11.508000 #22647]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-17 17:38:11 -0400
+I, [2013-08-17T17:38:11.524000 #22647]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:38:11.595000 #22647]  INFO -- :   Rendered devise/shared/_links.erb (4.0ms)
+I, [2013-08-17T17:38:11.599000 #22647]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (23.0ms)
+I, [2013-08-17T17:38:11.603000 #22647]  INFO -- : Completed 200 OK in 78ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+I, [2013-08-17T17:38:11.663000 #22647]  INFO -- : Started GET "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css" for 127.0.0.1 at 2013-08-17 17:38:11 -0400
+F, [2013-08-17T17:38:11.678000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:11.689000 #22647]  INFO -- : Started GET "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js" for 127.0.0.1 at 2013-08-17 17:38:11 -0400
+F, [2013-08-17T17:38:11.703000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:11.739000 #22647]  INFO -- : Started GET "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png" for 127.0.0.1 at 2013-08-17 17:38:11 -0400
+F, [2013-08-17T17:38:11.748000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:11.993000 #22647]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2013-08-17 17:38:11 -0400
+F, [2013-08-17T17:38:12.000000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:12.381000 #22647]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-17 17:38:12 -0400
+I, [2013-08-17T17:38:12.389000 #22647]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:38:12.512000 #22647]  INFO -- :   Rendered devise/shared/_links.erb (8.0ms)
+I, [2013-08-17T17:38:12.516000 #22647]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (26.0ms)
+I, [2013-08-17T17:38:12.520000 #22647]  INFO -- : Completed 200 OK in 131ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+I, [2013-08-17T17:38:12.574000 #22647]  INFO -- : Started GET "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css" for 127.0.0.1 at 2013-08-17 17:38:12 -0400
+F, [2013-08-17T17:38:12.580000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:12.587000 #22647]  INFO -- : Started GET "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js" for 127.0.0.1 at 2013-08-17 17:38:12 -0400
+F, [2013-08-17T17:38:12.595000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:12.614000 #22647]  INFO -- : Started GET "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png" for 127.0.0.1 at 2013-08-17 17:38:12 -0400
+F, [2013-08-17T17:38:12.623000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:12.719000 #22647]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2013-08-17 17:38:12 -0400
+F, [2013-08-17T17:38:12.726000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:13.119000 #22647]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-17 17:38:13 -0400
+I, [2013-08-17T17:38:13.126000 #22647]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:38:13.169000 #22647]  INFO -- :   Rendered devise/shared/_links.erb (3.0ms)
+I, [2013-08-17T17:38:13.171000 #22647]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (13.0ms)
+I, [2013-08-17T17:38:13.175000 #22647]  INFO -- : Completed 200 OK in 49ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+I, [2013-08-17T17:38:13.223000 #22647]  INFO -- : Started GET "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css" for 127.0.0.1 at 2013-08-17 17:38:13 -0400
+F, [2013-08-17T17:38:13.232000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-af9fadc70e6dbf8f528a8b646382846d.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:13.239000 #22647]  INFO -- : Started GET "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js" for 127.0.0.1 at 2013-08-17 17:38:13 -0400
+F, [2013-08-17T17:38:13.248000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-01c43479a4002d98c2f74e2a6f2b4907.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:13.271000 #22647]  INFO -- : Started GET "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png" for 127.0.0.1 at 2013-08-17 17:38:13 -0400
+F, [2013-08-17T17:38:13.300000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/brainbox-98d22e11388396e48737e2f3501b5905.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:38:13.423000 #22647]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2013-08-17 17:38:13 -0400
+F, [2013-08-17T17:38:13.432000 #22647] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:42:59.323000 #22674]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2013-08-17 17:42:59 -0400
+I, [2013-08-17T17:42:59.711000 #22674]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:43:03.365000 #22674]  INFO -- :   Rendered devise/shared/_links.erb (9.0ms)
+I, [2013-08-17T17:43:03.370000 #22674]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (68.0ms)
+I, [2013-08-17T17:43:03.376000 #22674]  INFO -- : Completed 200 OK in 3664ms (Views: 90.0ms | ActiveRecord: 21.0ms)
+I, [2013-08-17T17:43:03.431000 #22674]  INFO -- : Started GET "/assets/application-38aa9cca120123b26a87523bcbd1647f.css" for 127.0.0.1 at 2013-08-17 17:43:03 -0400
+F, [2013-08-17T17:43:03.439000 #22674] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-38aa9cca120123b26a87523bcbd1647f.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:43:03.449000 #22674]  INFO -- : Started GET "/assets/application-1a727b152f2db629d557fc8f1b57e8c5.js" for 127.0.0.1 at 2013-08-17 17:43:03 -0400
+F, [2013-08-17T17:43:03.462000 #22674] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-1a727b152f2db629d557fc8f1b57e8c5.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:43:03.576000 #22674]  INFO -- : Started GET "/assets/brainbox-762ab9fd73007008c2b75332ea999889.png" for 127.0.0.1 at 2013-08-17 17:43:03 -0400
+F, [2013-08-17T17:43:03.599000 #22674] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/brainbox-762ab9fd73007008c2b75332ea999889.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:43:03.761000 #22674]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2013-08-17 17:43:03 -0400
+F, [2013-08-17T17:43:03.772000 #22674] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rvm/rubies/jruby-1.7.4/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+
+
+I, [2013-08-17T17:48:34.912000 #22714]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:48:38.678000 #22714]  INFO -- :   Rendered devise/shared/_links.erb (8.0ms)
+I, [2013-08-17T17:48:38.681000 #22714]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (47.0ms)
+I, [2013-08-17T17:48:38.690000 #22714]  INFO -- : Completed 200 OK in 3777ms (Views: 70.0ms | ActiveRecord: 15.0ms)
+I, [2013-08-17T17:49:16.092000 #22714]  INFO -- : Processing by SessionsController#create as HTML
+I, [2013-08-17T17:49:16.097000 #22714]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbsw+ZL2FUwVA/LND/DRsnkXsUiHs/Obi0CVxuDpYMU=", "user"=>{"email"=>"super_user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-08-17T17:49:16.119000 #22714]  INFO -- : Completed 401 Unauthorized in 21ms
+I, [2013-08-17T17:49:16.130000 #22714]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:49:16.131000 #22714]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbsw+ZL2FUwVA/LND/DRsnkXsUiHs/Obi0CVxuDpYMU=", "user"=>{"email"=>"super_user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-08-17T17:49:16.400000 #22714]  INFO -- :   Rendered devise/shared/_links.erb (4.0ms)
+I, [2013-08-17T17:49:16.405000 #22714]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (19.0ms)
+I, [2013-08-17T17:49:16.410000 #22714]  INFO -- : Completed 200 OK in 271ms (Views: 26.0ms | ActiveRecord: 6.0ms)
+I, [2013-08-17T17:49:26.282000 #22714]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-08-17T17:49:26.292000 #22714]  INFO -- : Completed 401 Unauthorized in 8ms
+I, [2013-08-17T17:49:26.320000 #22714]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:49:26.379000 #22714]  INFO -- :   Rendered devise/shared/_links.erb (3.0ms)
+I, [2013-08-17T17:49:26.381000 #22714]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (17.0ms)
+I, [2013-08-17T17:49:26.387000 #22714]  INFO -- : Completed 200 OK in 62ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+I, [2013-08-17T17:52:48.106000 #22735]  INFO -- : Migrating to DeviseCreateUsers (20121201043016)
+I, [2013-08-17T17:52:48.197000 #22735]  INFO -- : Migrating to AddFirstToUser (20121204024426)
+I, [2013-08-17T17:52:48.210000 #22735]  INFO -- : Migrating to AddLastToUser (20121204024833)
+I, [2013-08-17T17:52:48.237000 #22735]  INFO -- : Migrating to AddRolesToUser (20121206015746)
+I, [2013-08-17T17:52:48.250000 #22735]  INFO -- : Migrating to AddPreferencesToUser (20121206015908)
+I, [2013-08-17T17:52:48.263000 #22735]  INFO -- : Migrating to CreateSchoolUserJoinTable (20121206015911)
+I, [2013-08-17T17:52:48.279000 #22735]  INFO -- : Migrating to CreateChildUserJoinTable (20121206015912)
+I, [2013-08-17T17:52:48.308000 #22735]  INFO -- : Migrating to CreateStudentSectionJoinTable (20121206015913)
+I, [2013-08-17T17:52:48.323000 #22735]  INFO -- : Migrating to CreateTeacherSectionJoinTable (20121206015914)
+I, [2013-08-17T17:52:48.344000 #22735]  INFO -- : Migrating to CreateSchools (20121206023611)
+I, [2013-08-17T17:52:48.372000 #22735]  INFO -- : Migrating to CreateCourses (20121206024106)
+I, [2013-08-17T17:52:48.388000 #22735]  INFO -- : Migrating to CreateSections (20121206024400)
+I, [2013-08-17T17:52:48.409000 #22735]  INFO -- : Migrating to CreateAssignments (20121206024636)
+I, [2013-08-17T17:52:48.454000 #22735]  INFO -- : Migrating to CreateSubmissions (20121206024832)
+I, [2013-08-17T17:52:48.479000 #22735]  INFO -- : Migrating to CreateSuperFiles (20121206025513)
+I, [2013-08-17T17:52:48.495000 #22735]  INFO -- : Migrating to CreateCalendarEvents (20121206025634)
+I, [2013-08-17T17:52:48.522000 #22735]  INFO -- : Migrating to CreateComments (20121206025849)
+I, [2013-08-17T17:52:48.543000 #22735]  INFO -- : Migrating to CreateParentUserJoinTable (201212060159121)
+I, [2013-08-17T17:53:55.432000 #22742]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:53:59.046000 #22742]  INFO -- :   Rendered devise/shared/_links.erb (8.0ms)
+I, [2013-08-17T17:53:59.050000 #22742]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (48.0ms)
+I, [2013-08-17T17:53:59.060000 #22742]  INFO -- : Completed 200 OK in 3627ms (Views: 73.0ms | ActiveRecord: 18.0ms)
+I, [2013-08-17T17:54:38.185000 #22742]  INFO -- : Processing by SessionsController#create as HTML
+I, [2013-08-17T17:54:38.192000 #22742]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbsw+ZL2FUwVA/LND/DRsnkXsUiHs/Obi0CVxuDpYMU=", "user"=>{"email"=>"rmseng@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-08-17T17:54:38.205000 #22742]  INFO -- : Completed 401 Unauthorized in 12ms
+I, [2013-08-17T17:54:38.218000 #22742]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:54:38.219000 #22742]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbsw+ZL2FUwVA/LND/DRsnkXsUiHs/Obi0CVxuDpYMU=", "user"=>{"email"=>"rmseng@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-08-17T17:54:38.303000 #22742]  INFO -- :   Rendered devise/shared/_links.erb (3.0ms)
+I, [2013-08-17T17:54:38.306000 #22742]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (15.0ms)
+I, [2013-08-17T17:54:38.312000 #22742]  INFO -- : Completed 200 OK in 93ms (Views: 21.0ms | ActiveRecord: 2.0ms)
+I, [2013-08-17T17:54:39.892000 #22742]  INFO -- : Processing by SessionsController#create as HTML
+I, [2013-08-17T17:54:39.893000 #22742]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbsw+ZL2FUwVA/LND/DRsnkXsUiHs/Obi0CVxuDpYMU=", "user"=>{"email"=>"rmseng@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-08-17T17:54:39.904000 #22742]  INFO -- : Completed 401 Unauthorized in 11ms
+I, [2013-08-17T17:54:39.909000 #22742]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:54:39.910000 #22742]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbsw+ZL2FUwVA/LND/DRsnkXsUiHs/Obi0CVxuDpYMU=", "user"=>{"email"=>"rmseng@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-08-17T17:54:39.967000 #22742]  INFO -- :   Rendered devise/shared/_links.erb (3.0ms)
+I, [2013-08-17T17:54:39.974000 #22742]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (20.0ms)
+I, [2013-08-17T17:54:39.982000 #22742]  INFO -- : Completed 200 OK in 71ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+I, [2013-08-17T17:54:50.169000 #22742]  INFO -- : Processing by SessionsController#create as HTML
+I, [2013-08-17T17:54:50.169000 #22742]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tbsw+ZL2FUwVA/LND/DRsnkXsUiHs/Obi0CVxuDpYMU=", "user"=>{"email"=>"super_user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-08-17T17:54:50.471000 #22742]  INFO -- : Redirected to http://localhost:3000/
+I, [2013-08-17T17:54:50.472000 #22742]  INFO -- : Completed 302 Found in 302ms (ActiveRecord: 9.0ms)
+I, [2013-08-17T17:54:50.517000 #22742]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-08-17T17:54:50.556000 #22742]  INFO -- :   Rendered home/index.html.erb within layouts/application (4.0ms)
+I, [2013-08-17T17:54:50.641000 #22742]  INFO -- :   Rendered application/_sidebar.html.erb (53.0ms)
+I, [2013-08-17T17:54:50.657000 #22742]  INFO -- :   Rendered application/_feedback_form_modal.html.erb (9.0ms)
+I, [2013-08-17T17:54:50.659000 #22742]  INFO -- : Completed 200 OK in 141ms (Views: 116.0ms | ActiveRecord: 6.0ms)
+I, [2013-08-17T17:54:59.083000 #22742]  INFO -- : Processing by SessionsController#destroy as HTML
+I, [2013-08-17T17:54:59.084000 #22742]  INFO -- :   Parameters: {"authenticity_token"=>"LCsrccktbDBy8nxOdSkaOvamAJ1uIido1+XjfMYddlk="}
+I, [2013-08-17T17:54:59.184000 #22742]  INFO -- : Redirected to http://localhost:3000/
+I, [2013-08-17T17:54:59.186000 #22742]  INFO -- : Completed 302 Found in 100ms (ActiveRecord: 6.0ms)
+I, [2013-08-17T17:54:59.222000 #22742]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-08-17T17:54:59.236000 #22742]  INFO -- : Completed 401 Unauthorized in 13ms
+I, [2013-08-17T17:54:59.275000 #22742]  INFO -- : Processing by SessionsController#new as HTML
+I, [2013-08-17T17:54:59.342000 #22742]  INFO -- :   Rendered devise/shared/_links.erb (4.0ms)
+I, [2013-08-17T17:54:59.349000 #22742]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/pre_auth (18.0ms)
+I, [2013-08-17T17:54:59.355000 #22742]  INFO -- : Completed 200 OK in 80ms (Views: 26.0ms | ActiveRecord: 0.0ms)

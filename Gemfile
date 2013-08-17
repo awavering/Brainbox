@@ -1,41 +1,56 @@
 source 'https://rubygems.org'
 
-#ruby '1.9.3'
-
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'json', '1.7.7'
 
-if RUBY_PLATFORM =~ /java/
-  gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.0.beta2'
-  #gem 'jruby-openssl', platform: jruby
-else
-  group :heroku do
-  	gem 'pg'
-  end
-  group :development, :production, :test do
-  	gem 'sqlite3'
-  end
-end
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
 
-gem 'sass-rails'
-gem 'coffee-rails'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyrhino'
 
-gem 'uglifier', '>= 1.3.0'
-
+# Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
 
-# To use debugger
-# gem 'debugger'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 1.2'
 
-gem 'therubyrhino'
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
 
-# vital to application: user management, styling, and validation
+if RUBY_PLATFORM =~ /java/
+  gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.0.beta2'
+else
+  group :development, :test do
+    gem 'sqlite3'
+  end
+  group :production do
+    gem 'pg'
+  end
+end
+
+gem 'rails_12factor', group: :production
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano', group: :development
+
 gem 'devise', '~> 3.0.0rc'
 gem 'bootstrap-sass', '~> 2.2.2.0'
 gem 'client_side_validations', git: 'git://github.com/bcardarella/client_side_validations.git', branch: '4-0-beta' # return to main gem when it's out of beta
@@ -45,5 +60,4 @@ gem 'validates_timeliness', '~> 3.0.14'
 gem 'factory_girl_rails'
 gem 'faker'
 
-# backwards compatibility with Rails 3.x behavior
 gem 'protected_attributes'

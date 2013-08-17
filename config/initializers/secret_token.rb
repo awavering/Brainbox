@@ -10,4 +10,4 @@ def replace_me
   exit
 end
 
-Brainbox::Application.config.secret_key_base = '43315eeecea4df801549f1690aa57227598eb6f97214060f35347461abee6690ec0e07b65bb9bb07044012fb192424bce95ef96176c73099597dcf772dee22fa'
+Brainbox::Application.config.secret_key_base = replace_me

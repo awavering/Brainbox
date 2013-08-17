@@ -1,8 +1,5 @@
-# Load the rails application
+# Load the Rails application.
 require File.expand_path('../application', __FILE__)
 
-# set up the Rails logger
-Rails.logger = Logger.new(STDOUT)
-
-# Initialize the rails application
+# Initialize the Rails application.
 Brainbox::Application.initialize!
