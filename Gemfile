@@ -5,16 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'json', '1.7.7'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 if RUBY_PLATFORM =~ /java/
   gem 'activerecord-jdbcsqlite3-adapter', '~> 1.3.0.beta2'
+  #gem 'jruby-openssl', platform: jruby
 else
   gem 'sqlite3'
 end
-
-#gem 'jruby-openssl', platform: jruby
 
 gem 'sass-rails'
 gem 'coffee-rails'
@@ -28,15 +24,6 @@ gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
